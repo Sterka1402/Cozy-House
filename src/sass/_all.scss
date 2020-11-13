@@ -4,14 +4,63 @@
   box-sizing: border-box;
   outline: none;
 }
+
 body {
   font-family: Georgia;
   font-size: $font-size;
- 
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  color: $color-header-footer-h;
 }
 
 .start {
   max-width: 1280px;
   background: $background-header-footer;
-  // background-color: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  display: flex;
+  color: $color-header-footer-h;
+
+    h3{
+      color: $color-header-footer-primary;
+    }
+
+    .header{
+      display: flex;
+      align-items: stretch;
+
+      p{
+        color: $color-header-footer-h;
+      }
+
+      .nav-menu{
+        display: flex;
+        align-items:center;
+
+        .li{
+          color: $color-header-footer-li;
+        }
+
+        .active{
+          border-bottom: 1px solid $color-header-footer-primary;
+        }
+      }
+    }
+  
 }
+
+.container{
+  margin: 0 auto;
+  max-width: 850px;
+}
+.about{
+  background-color: $background-about-help;
+}
+
+.pets{
+  background-color: $background-pets-donation;
+}
+

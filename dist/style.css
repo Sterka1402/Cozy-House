@@ -1,18 +1,1 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-body {
-  font-family: Georgia;
-  font-size: 20px;
-  background: #513d2f;
-}
-
-.start {
-  max-width: 1280px;
-}
-
-/*# sourceMappingURL=style.css.map */
+*{margin:0;padding:0;box-sizing:border-box;outline:none}body{font-family:Georgia;font-size:20px}a{text-decoration:none}h2{color:#fff}.start{max-width:1280px;background:#513d2f;display:flex;color:#fff}.start h3{color:#f1cdb3}.start .header{display:flex;align-items:stretch}.start .header p{color:#fff}.start .header .nav-menu{display:flex;align-items:center}.start .header .nav-menu .li{color:#cdcdcd}.start .header .nav-menu .active{border-bottom:1px solid #f1cdb3}.container{margin:0 auto;max-width:850px}.about{background-color:#fff}.pets{background-color:#f6f6f6}
