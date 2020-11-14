@@ -21,8 +21,7 @@ h2{
 .start {
   max-width: 1280px;
   background: $background-header-footer;
-  display: flex;
-  color: $color-header-footer-h;
+    color: $color-header-footer-h;
 
     h3{
       color: $color-header-footer-primary;
@@ -30,18 +29,27 @@ h2{
 
     .header{
       display: flex;
-      align-items: stretch;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      margin: auto 40px;
+      padding-top: 78px;
 
       p{
         color: $color-header-footer-h;
       }
 
       .nav-menu{
+        max-width: 443px;
         display: flex;
         align-items:center;
+        justify-content: space-between;
+        list-style-type: none;
 
         .li{
           color: $color-header-footer-li;
+          margin: 0 35px;
+          
         }
 
         .active{
@@ -50,6 +58,35 @@ h2{
       }
     }
   
+}
+.startscreen{
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin: 180px 40px auto 40px;
+
+  .textstart{
+    max-width: 460px;
+
+    h2{
+      color: $color-header-footer-h;
+      font-size: 44px;
+      line-height: 130%;
+    }
+
+    p{
+      color: $color-header-footer-li;
+      margin: 42px auto;
+    }
+  }
+  .startbutton{
+    color: $color-buttons;
+    background-color: $background-buttons;
+    border-radius: $border-radius;
+    text-align: center;
+    max-width: 207px;
+    padding: 15px 45px;
+  }
 }
 
 .container{
