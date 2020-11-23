@@ -1,0 +1,31 @@
+footer {
+  background: $background-header-footer;
+  background-repeat: repeat;
+  overflow:hidden;
+  color: $color-header-footer-h;
+  
+}
+
+.footer{
+  display: flex;
+  height: 310px;
+  margin: 40px 40px 0 40px;
+    
+  h3{
+    color: $color-header-footer-h;
+  }
+  .text_address {
+    margin: 40px auto;
+    vertical-align: middle;   
+  }
+  svg {
+    vertical-align: middle;
+  }
+  span {
+    padding-left: 10px;
+  }
+
+  img {
+   align-self: flex-end;
+  }
+}
