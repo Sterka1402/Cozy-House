@@ -1,15 +1,14 @@
-header {
+.start {
   background: $background-header-footer;
   overflow:hidden;
   color: $color-header-footer-h;
+  margin: auto 40px;
 
   .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-    margin: auto 40px;
-    padding-top: 78px;
+    padding: 60px 0;
 
     a {
       font-size: 32px;
@@ -46,12 +45,10 @@ header {
 }
 
 .startscreen{
-  width: 1200px;
   display: flex;
   text-align: left;
   justify-content: space-between;
-  margin: 180px 40px auto 40px;
-
+  
   .textstart{
     max-width: 460px;
     margin: 163px 42px 243px 0;
@@ -84,3 +81,4 @@ header {
     display: block;
   }
 }
+
