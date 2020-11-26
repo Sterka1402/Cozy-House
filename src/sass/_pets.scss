@@ -1,0 +1,112 @@
+
+.hover:hover{
+  background-color: $background-buttons-hover;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+
+header  {
+  background: $background-header-footer;
+  overflow:hidden;
+  color: $color-header-footer-h;
+
+  .header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+
+    a {
+      font-size: 32px;
+      line-height: 110%;  
+      color: $color-header-footer-primary;
+    }
+      
+    p {
+      margin-top: 10px;
+      color: $color-header-footer-h;
+    }
+  
+    .nav-menu{
+      width: 443px;
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      list-style-type: none;
+      text-decoration: none;
+      
+      a{
+        font-family: Arial;
+        font-size: 15px;
+        line-height: 160%;
+        color: $color-header-footer-li;
+      }
+
+      .active{
+        border-bottom: 1px solid $color-header-footer-primary;
+        color: #FAFAFA;
+      }
+    }
+  }
+}
+
+h3 {
+  width: 400px;
+}
+
+.ourpets-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1200px;
+  margin: 0 auto;
+  
+  .ourpets-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $background-about-help;
+    // margin: auto 45px;
+    
+    h4{
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 130%;
+      color: $color-about-h;
+      margin: 0 auto;
+      letter-spacing: 0.06em;
+      
+      margin: 30px auto;
+    }
+
+    .ourpets-buttons {
+      border: 2px solid $background-buttons;
+      border-radius: $border-radius;
+      padding: 15px 45px;
+      margin: 30px 41.5px;
+
+      a {
+        font-size: 17px;
+        color: $color-buttons;
+      }
+    }
+  }
+}
+
+.ourpets-navigation {
+  margin: 0 auto;
+
+  button {
+    border: 2px solid $background-buttons;
+    border-radius: 100px;
+    height: 52px;
+    width: 52px;
+    padding: 0 17px;
+    align-items: center;
+  } 
+}
