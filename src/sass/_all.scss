@@ -30,6 +30,11 @@ h3 {
   width: 1200px;
   margin: 0 auto;
 }
+@media(max-width: 768px) {
+.container {
+  width: 100%;
+}
+}
 
 h2{
   color: $color-header-footer-h;
@@ -63,6 +68,15 @@ h2{
     }
   }
 }
+
+@media(max-width: 768px) {
+  .about {
+    // margin: 0 auto;
+    padding: 10px;
+    width: auto;
+    flex-direction: column-reverse;
+  }
+}  
 
 .pets{
   background-color: $background-pets-donation;
@@ -128,6 +142,20 @@ h2{
   margin: 60px auto;
 }
 
+@media(max-width: 768px) {
+  .pets {
+    height: auto;
+    .pets-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }  
+    .pets-card {
+      width: 30%;
+    }  
+
+  }
+}  
+
 .help-content {
   height: 611px;
   margin-top: 80px;
@@ -157,6 +185,14 @@ h2{
     }
   }
 }
+
+@media(max-width: 768px) {
+  .help-icon figure{
+      width:33%;
+      height: auto;
+      // margin-bottom: 20px;
+    }
+}  
 
 .backdonation{
   background-color: $background-pets-donation;
@@ -204,3 +240,11 @@ h2{
     }
   }
 }
+
+@media(max-width: 768px) {
+  .donation {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }  
+}  
