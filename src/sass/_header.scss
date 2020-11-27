@@ -2,13 +2,12 @@
   background: $background-header-footer;
   overflow: hidden;
   color: $color-header-footer-h;
-  // margin: auto 40px;
-
+  
   .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 30px 0;
 
     a {
       font-size: 32px;
@@ -22,10 +21,9 @@
     }
   
     .nav-menu{
-      width: 443px;
+      max-width: 443px;
       display: flex;
       align-items:center;
-      justify-content: space-between;
       list-style-type: none;
       text-decoration: none;
       
@@ -34,6 +32,7 @@
         font-size: 15px;
         line-height: 160%;
         color: $color-header-footer-li;
+        margin-right: 10px;
       }
 
       .active{
@@ -87,32 +86,24 @@
     width: 100%;
   
     .header{
-      display: flex;
-      align-items: center;
-      padding: 60px 0;
-  
-        
-      .nav-menu{
-        width: 100%;
-        
-      }
+     justify-content: space-around;
     }
   }
   
   .startscreen{
-    display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     
-     .textstart{
-      max-width: 460px;
-      // margin: auto;
-  
+    .textstart{
+      margin: 60px auto;
     }
-       
+    .startbutton{
+      margin: 0 auto;
+    }  
     img {
-      margin: auto;
+      max-width: 100%;
+      width: 80%;
+      margin: 40px 30px 0 139px;
     }
   }
 }
