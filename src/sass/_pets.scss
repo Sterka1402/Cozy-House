@@ -52,7 +52,7 @@ header  {
 .ourpets-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   
   .ourpets-card {
@@ -73,17 +73,19 @@ header  {
       margin: 30px auto;
     }
 
-    .ourpets-buttons {
-      border: 2px solid $background-buttons;
-      border-radius: $border-radius;
-      padding: 15px 45px;
-      margin: 30px 41.5px;
+    
+  }
+}
 
-      a {
-        font-size: 17px;
-        color: $color-buttons;
-      }
-    }
+.ourpets-buttons {
+  border: 2px solid $background-buttons;
+  border-radius: $border-radius;
+  padding: 15px 45px;
+  margin: 30px 41.5px;
+
+  a {
+    font-size: 17px;
+    color: $color-buttons;
   }
 }
 
