@@ -3,17 +3,22 @@ footer {
   background-repeat: repeat;
   overflow:hidden;
   color: $color-header-footer-h;
-  
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .footer{
   display: flex;
   margin: 40px 40px 0 40px;
+  max-width: 100%;
+  
     
   h3{
     color: $color-header-footer-h;
+    
   }
   .text_address {
+    max-width: 100%;
     margin: 40px auto;
     vertical-align: middle;   
   }
@@ -26,6 +31,8 @@ footer {
 
   img {
    align-self: flex-end;
+   max-width: 100%;
+   
   }
 }
 

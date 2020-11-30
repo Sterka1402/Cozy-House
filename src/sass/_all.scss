@@ -29,12 +29,13 @@ h3 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 @media(max-width: 768px) {
-.container {
-  max-width: 708px;
-  width: 100%;
-}
+  .container {
+    max-width: 708px;
+    width: 100%;
+  }
 }
 
 h2{
@@ -48,8 +49,10 @@ h2{
   display: flex;
   text-align: center;
   justify-content: center;
+  max-width: 100%;
   
   img {
+    max-width: 100%;
     margin: 80px 120px auto auto;
   }
   
@@ -171,8 +174,6 @@ h2{
         
       }  
     }  
-    
-
   }
 }  
 
@@ -210,9 +211,8 @@ h2{
     width:100%;
     .help-icon figure{
       width:20%;
+    }
   }
-  }
-  
 } 
 
 .backdonation{
@@ -224,9 +224,11 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   img {
     margin-right: 30px;
+   
   }
 
   .donation-content{
@@ -260,6 +262,10 @@ h2{
       color: #B2B2B2;
     }
   }
+}
+
+.donation img {
+  max-width: 100%;
 }
 
 @media(max-width: 768px) {
