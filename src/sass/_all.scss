@@ -42,6 +42,74 @@ h2{
   color: $color-header-footer-h;
 }
 
+.startscreen{
+  margin-top: 60px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+    width: 100%;
+  
+   .textstart{
+    max-width: 40%;
+    margin-right: 42px;
+
+    h2{
+      color: $color-header-footer-h;
+      font-size: 44px;
+      line-height: 130%;
+    }
+
+    p{
+      color: $color-header-footer-li;
+      margin: 42px auto;
+    }
+  }
+
+  .startbutton{
+    a{
+      color: $color-buttons;
+    }
+
+    background-color: $background-buttons;
+    border-radius: $border-radius;
+    text-align: center;
+    max-width: 207px;
+    padding: 15px 45px;
+  }
+  div img{
+    width: 100%;
+    display: block;
+  }
+  img {
+    max-width: 100%;
+    display:block;
+    width: 70%;
+  }
+}
+
+@media(max-width: 768px) {
+  .startscreen{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    
+    .textstart{
+      max-width: 70%;
+      text-align: center;
+      margin: 60px auto;
+    }
+    .startbutton{
+      margin: 0 auto;
+    }  
+    img {
+      margin-left: 150px;
+      max-width: 70%;
+      
+    }
+  }
+
+}  
+
 .about{
   margin-top: 80px;
   margin-bottom: 100px;
@@ -51,16 +119,22 @@ h2{
   justify-content: center;
   max-width: 100%;
   
+div img{
+  width: 100%;
+}
+
   img {
     max-width: 100%;
-    margin: 80px 120px auto auto;
+    
   }
   
   .text-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 430px;
+    margin-left: 120px;
+    width: 40%;
+    // max-width: 430px;
     
     h3 {
       max-width: 370px;
@@ -80,11 +154,13 @@ h2{
     flex-direction: column-reverse;
     
     .text-about{
+      width: 70%;
       margin: 0 auto;
       margin-bottom: 80px;
     }
 
     img {
+      max-width: 50%;
       margin: 0 auto;
     }
   }
@@ -94,19 +170,33 @@ h2{
   background-color: $background-pets-donation;
   background-repeat: repeat;
   overflow: hidden;
+  max-width:100%;
   
   h3 {
-    text-align: center;
     max-width: 400px;
     margin: 80px auto 60px auto;
   }
 }
 
 .pets-grid {
+  max-width:100%;
   display: flex;
+  overflow: hidden;
+  position: relative;
   text-align: center;
   justify-content: center;
   align-items: center;
+
+  .left-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .right-button {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+  }
 
   button {
     border: 2px solid $background-buttons;
@@ -120,8 +210,19 @@ h2{
 
 .pets-card {
   background-color: $background-about-help;
-  margin: auto 45px;
+  margin: auto 15px;
+  max-width: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
   
+  
+  div{
+    max-width: 100%;
+    img{
+      width:100%;
+    }
+  }
+
   p{
     margin: 30px auto;
   }
@@ -129,8 +230,8 @@ h2{
   .pets-buttons {
     border: 2px solid $background-buttons;
     border-radius: $border-radius;
-    padding: 15px 45px;
-    margin: 30px 41.5px;
+    padding: 15px 0;
+    margin: 30px auto;
 
     a {
       font-size: 17px;
@@ -140,10 +241,6 @@ h2{
 }
 
 .pets-button {
-  a{
-    color: $color-buttons;
-  }
-
   font-size: 17px;
   background-color: $background-buttons;
   border-radius: $border-radius;
@@ -151,32 +248,31 @@ h2{
   max-width: 261px;
   padding: 15px 45px;
   margin: 60px auto;
+
+  a{
+    color: $color-buttons;
+  }
 }
 
 @media(max-width: 768px) {
   .pets {
     width:100%;
-   
-    overflow: hidden;
-    .pets-grid {
-      position: relative;
-      .left-button {
-        position: absolute;
-        top: 50%;
-        left:7%;
+
+    .pets-grid{
+      width:100%;
+
+      .pets-card {
+        
+        flex-shrink: 0;
+        overflow: hidden;
       }
-      .right-button {
-        position: absolute;
-        top: 50%;
-        right: -7%;
-      }
-      
-    }  
+    }
+    
   }
 }  
 
 .help-content {
-  margin: 80px 40px 100px 40px;
+  margin: 80px auto 100px auto;
   
   h3 {
     text-align: center;
@@ -192,10 +288,13 @@ h2{
     text-align: center;
     
     figure{
-      width:14%;
+      width:15%;
       margin-top: 55px;
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+      svg {
+        min-height: 60px;
+      }
     }
 
     figcaption {
@@ -208,14 +307,14 @@ h2{
   .help-content {
     width:100%;
     .help-icon figure{
-      width:20%;
+      width:25%;
     }
   }
 } 
 
 .backdonation{
   background-color: $background-pets-donation;
-  padding: 80px 40px 100px 40px;
+  padding: 80px 0 100px 0;
 }
 
 .donation {
@@ -225,17 +324,13 @@ h2{
   width: 100%;
 
   img {
-    margin-right: 30px;
-   
+    max-width: 100%;
   }
 
   .donation-content{
-    max-width: 380px;
-  
-    h3{
-      max-width: 300px;
-    }
-
+    max-width: 40%;
+    margin-left: 30px;
+    
     p {
       letter-spacing: 0.06em;
       color: $color-about-h;
@@ -249,6 +344,9 @@ h2{
       display: flex;
       align-items: center;
       padding: 10px 15px;
+      img{
+        margin-right: 15px;
+      }
     }
 
     .legal-information {
@@ -262,16 +360,14 @@ h2{
   }
 }
 
-.donation img {
-  max-width: 100%;
-}
-
 @media(max-width: 768px) {
   .donation {
     flex-direction: column-reverse;
 
     .donation-content{
       margin-bottom: 60px;
+      align-items: center;
+      max-width: 70%;
     }
   }  
 }  

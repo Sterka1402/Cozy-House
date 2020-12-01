@@ -2,8 +2,7 @@
   background: $background-header-footer;
   overflow: hidden;
   color: $color-header-footer-h;
-  overflow: hidden;
-  
+   
   .header{
     display: flex;
     align-items: center;
@@ -44,74 +43,17 @@
   }
 }
 
-.startscreen{
-  display: flex;
-  text-align: left;
-  justify-content: space-between;
-  
-  width: 100%;
-  
-   .textstart{
-    max-width: 100%;
-    margin: 163px 42px 243px 0;
-
-    h2{
-      color: $color-header-footer-h;
-      font-size: 44px;
-      line-height: 130%;
-    }
-
-    p{
-      color: $color-header-footer-li;
-      margin: 42px auto;
-    }
-  }
-
-  .startbutton{
-    a{
-      color: $color-buttons;
-    }
-
-    background-color: $background-buttons;
-    border-radius: $border-radius;
-    text-align: center;
-    max-width: 207px;
-    padding: 15px 45px;
-  }
-
-  img {
-    // max-width: auto;
-     margin-top: 100%;
-    // width: 100%;
-  }
-}
-
 @media(max-width: 768px) {
   .start {
     width: 100%;
-  
-    .header{
-     justify-content: space-around;
-    }
+  }
+
+  .header{
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 10px;
   }
   
-  .startscreen{
-    flex-direction: column;
-    
-    
-    .textstart{
-      text-align: center;
-      margin: 60px auto;
-    }
-    .startbutton{
-      margin: 0 auto;
-    }  
-    img {
-      float: right;
-      // max-width: 100%;
-      width: 80%;
-      
-    }
-  }
+  
 }
 
