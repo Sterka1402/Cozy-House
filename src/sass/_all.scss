@@ -104,10 +104,8 @@ h2{
     img {
       margin-left: 150px;
       max-width: 70%;
-      
     }
   }
-
 }  
 
 .about{
@@ -119,13 +117,12 @@ h2{
   justify-content: center;
   max-width: 100%;
   
-div img{
-  width: 100%;
-}
+  div img{
+    width: 100%;
+  }
 
   img {
     max-width: 100%;
-    
   }
   
   .text-about {
@@ -134,8 +131,7 @@ div img{
     justify-content: center;
     margin-left: 120px;
     width: 40%;
-    // max-width: 430px;
-    
+       
     h3 {
       max-width: 370px;
     }
@@ -167,6 +163,7 @@ div img{
 }  
 
 .pets{
+  z-index: 0;
   background-color: $background-pets-donation;
   background-repeat: repeat;
   overflow: hidden;
@@ -209,12 +206,14 @@ div img{
 }
 
 .pets-card {
+  display:flex;
+  flex-direction: column;
   background-color: $background-about-help;
   margin: auto 15px;
   max-width: 50%;
   overflow: hidden;
-  flex-shrink: 0;
-  
+  justify-content: center;
+  align-items: center;
   
   div{
     max-width: 100%;
@@ -231,7 +230,10 @@ div img{
     border: 2px solid $background-buttons;
     border-radius: $border-radius;
     padding: 15px 0;
-    margin: 30px auto;
+    margin: 30px 0;
+    min-width: 200px;
+    // max-width: 200px;
+
 
     a {
       font-size: 17px;
@@ -260,11 +262,23 @@ div img{
 
     .pets-grid{
       width:100%;
+      padding-left: 15px;
+      justify-content: flex-start;
+
+      .left-button {
+        left: 0%;
+        z-index: 1;
+      }
+      .right-button {
+        right: 0%;
+        z-index: 1;
+      }
 
       .pets-card {
-        
+        max-width: 60%;
         flex-shrink: 0;
         overflow: hidden;
+        margin: 0 25px;
       }
     }
     
