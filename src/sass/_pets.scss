@@ -1,0 +1,100 @@
+header  {
+  background: $background-header-footer;
+  overflow:hidden;
+  color: $color-header-footer-h;
+
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    a {
+      font-size: 32px;
+      line-height: 110%;  
+      color: $color-header-footer-primary;
+    }
+      
+    p {
+      margin-top: 10px;
+      color: $color-header-footer-h;
+    }
+  
+    .nav-menu{
+      width: 443px;
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      list-style-type: none;
+      text-decoration: none;
+      
+      a{
+        font-family: Arial;
+        font-size: 15px;
+        line-height: 160%;
+        color: $color-header-footer-li;
+      }
+
+      .active{
+        border-bottom: 1px solid $color-header-footer-primary;
+        color: #FAFAFA;
+      }
+    }
+  }
+}
+
+.h3pets {
+  max-width: 400px;
+  margin: 80px auto 60px auto;
+}
+
+.ourpets-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  
+  .ourpets-card {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: $background-about-help;
+    margin:0 15px;
+           
+    h4{
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 130%;
+      color: $color-about-h;
+      letter-spacing: 0.06em;
+      margin: 30px auto;
+    }
+  }
+}
+
+.ourpets-buttons {
+  min-width: 200px;
+  max-width: 200px;
+  border: 2px solid $background-buttons;
+  border-radius: $border-radius;
+  padding: 15px 0;
+  margin: 30px 0;
+}
+
+.ourpets-navigation {
+  display: flex;
+  justify-content:center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+
+  button {
+    border: 2px solid $background-buttons;
+    border-radius: 100px;
+    height: 52px;
+    width: 52px;
+    align-items: center;
+    margin-right: 20px;
+  } 
+}
