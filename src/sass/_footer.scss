@@ -9,11 +9,11 @@ footer {
 
 .footer{
   display: flex;
-  // margin: 40px 40px 0 40px;
   padding-top: 20px;
   max-width: 100%;
   justify-content: center;
   margin: 0 auto;
+
   .wrap{
     margin-right: 20px;
     margin-bottom: 20px;
@@ -56,9 +56,7 @@ footer {
     }  
         
     img {
-      // margin: 0 150px;
       margin-top: 65px;
-      
     }
   }
 }  

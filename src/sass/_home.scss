@@ -26,6 +26,12 @@ h3 {
   transition-duration: .2s;
 }
 
+.start {
+  background: $background-header-footer;
+  overflow: hidden;
+  color: $color-header-footer-h;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -47,7 +53,7 @@ h2{
   display: flex;
   text-align: left;
   justify-content: space-between;
-    width: 100%;
+  width: 100%;
   
    .textstart{
     max-width: 40%;
@@ -163,7 +169,6 @@ h2{
 }  
 
 .pets{
-  z-index: 0;
   background-color: $background-pets-donation;
   background-repeat: repeat;
   overflow: hidden;
@@ -236,9 +241,7 @@ h2{
     padding: 15px 0;
     margin: 30px 0;
     min-width: 200px;
-    // max-width: 200px;
-
-
+    
     a {
       font-size: 17px;
       color: $color-buttons;
@@ -271,11 +274,9 @@ h2{
 
       .left-button {
         left: 0%;
-        z-index: 1;
       }
       .right-button {
         right: 0%;
-        z-index: 1;
       }
 
       .pets-card {
