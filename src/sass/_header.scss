@@ -1,5 +1,5 @@
 header {
-  overflow:hidden;
+  // overflow:hidden;
   color: $color-header-footer-h;
   display: flex;
   align-items: center;
@@ -16,7 +16,9 @@ header {
       margin-top: 10px;
       color: $color-header-footer-h;
     }
-    
+    .burger{
+      display: none;
+    }
     .nav-menu{
       width: 443px;
       display: flex;
@@ -49,10 +51,27 @@ header {
     width: 100%;
   }  
 
-  .header{
+  header{
+    margin: 30px auto;
     width: 100%;
-    justify-content: space-around;
-    margin-left: 10px;
+        
+    .nav-menu{
+      margin-left: 10px;
+    }
   }
+}
+@media(max-width: 576px) {
+
+  
+  nav{
+    .burger{
+      display: block;
+      margin-right: 30px;
+    }
+    .nav-menu{
+      display: none;
+    }
+  }
+  
 }
 
