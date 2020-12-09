@@ -1,8 +1,8 @@
 const burger = document.querySelector('.burger');
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector('nav');
 
 function expandMenu () {
-  console.log('hello');
+  console.log(navMenu);
   navMenu.classList.toggle('open');
 };
 

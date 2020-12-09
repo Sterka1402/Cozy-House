@@ -11,7 +11,9 @@
   .nav-menu .active{
     color: $color-buttons;
   }
-
+  .open .active{
+    color:$color-header-footer-li;
+  }
 }
 .backpets{
   background-color: $background-pets-donation;
@@ -25,7 +27,6 @@
 }
 
 .ourpets-content {
-  // max-width: 1200px;
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -75,33 +76,45 @@
   } 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1210px) {
   .backpets{
     padding-bottom: 70px;
   }
   
   .ourpets-content {
-    max-height: 1365px;
-    max-width: 628px;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr 1fr 1fr;
-     overflow: hidden;
+    max-height: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
   }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 900px) {
   .backpets{
-    padding-bottom: 42px;
-    
+    padding-bottom: 70px;
   }
   .h3pets {
-    max-width: 60%;
-  
+    max-width: 70%;
   } 
+
+  .ourpets-content {
+    max-height: 1465px;
+    max-width: 628px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+  }
+}
+
+@media(max-width: 600px) {
+  .backpets{
+    padding-bottom: 42px;
+  }
+
   .ourpets-content {
     max-height: 1385px;
     max-width: 290px;
-     grid-template-columns: 1fr;
-     overflow: hidden;
+    grid-template-columns: 1fr;
+    overflow: hidden;
   }
 }
