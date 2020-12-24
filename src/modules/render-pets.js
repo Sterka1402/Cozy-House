@@ -1,6 +1,6 @@
 const renderPets = (pets, container) => {
   if (!container) return;
-  container.innerHTML= '';
+  container.innerHTML = '';
   pets.forEach((pet) => {
     const petCard = document.createElement('div');
     petCard.innerHTML = `

@@ -11,7 +11,7 @@ function slider() {
 
   function moveButtonNext() {
     step -= width * count;
-    step = Math.max(step, -width * (list.length - count - (3-count)));
+    step = Math.max(step, -width * (list.length - count - (3 - count)));
     visibleList.style.left = `${step}px`;
   }
 

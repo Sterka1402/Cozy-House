@@ -3,9 +3,10 @@ import renderPets from '../modules/render-pets';
 import sortPetsByName from '../modules/sort-pets';
 
 window.addEventListener('load', () => {
-    const petsContent = document.querySelector('.ourpets-content');
-    const sortForm = document.querySelector('.petsForm');
+  const petsContent = document.querySelector('.ourpets-content');
+  const sortForm = document.querySelector('.petsForm');
+  if (!sortForm) return;
 
-    renderPets(pets, petsContent);
-    // sortForm.addEventListener('change',(e) => sortPetsByName(e, pets, petsContent));
+  renderPets(pets, petsContent);
+  sortForm.addEventListener('change', (e) => sortPetsByName(e, pets, petsContent));
 });
