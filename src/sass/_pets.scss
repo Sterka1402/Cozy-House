@@ -25,13 +25,18 @@
   text-align: center;
   margin: 42px auto 42px auto;
 }
-.sort-pets {
+
+Form {
+  text-align: end;
+}
+
+option {
   color: black;
   padding-left: 1050px;
   
 } 
 
-.sort-pets:hover {
+option:hover {
   color: blue;
 }
 
