@@ -7,5 +7,5 @@ window.addEventListener('load', () => {
     const sortForm = document.querySelector('.petsForm');
 
     renderPets(pets, petsContent);
-    sortForm.addEventListener('change',(e) => sortPetsByName(e, pets, petsContent));
+    // sortForm.addEventListener('change',(e) => sortPetsByName(e, pets, petsContent));
 });

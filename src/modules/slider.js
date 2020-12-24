@@ -1,28 +1,28 @@
 function slider() {
-  const rightButton = document.querySelector('.right-button');
-  const leftButton = document.querySelector('.left-button');
+  const nextButton = document.querySelector('.right-button');
+  const prevButton = document.querySelector('.left-button');
   if (!document.querySelector('.pets-card')) return;
-  const width = document.querySelector('.pets-card').clientWidth + 27;
+  const width = 280;
 
   const list = document.querySelectorAll('.pets-card');
   const visibleList = document.querySelector('.pets-grid');
   let step = 0;
   const count = 1;
 
-  function moveButtonRight() {
+  function moveButtonNext() {
     step -= width * count;
-    step = Math.max(step, -width * (list.length - count));
+    step = Math.max(step, -width * (list.length - count - (3-count)));
     visibleList.style.left = `${step}px`;
   }
 
-  function moveButtonLeft() {
+  function moveButtonPrev() {
     step += width * count;
     step = Math.min(step, 0);
     visibleList.style.left = `${step}px`;
   }
 
-  rightButton.addEventListener('click', moveButtonRight);
-  leftButton.addEventListener('click', moveButtonLeft);
+  nextButton.addEventListener('click', moveButtonNext);
+  prevButton.addEventListener('click', moveButtonPrev);
 }
 
 export default slider;

@@ -42,6 +42,7 @@ h3 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  z-index: 0;
 }
 
 @media(max-width: $max-width-md) {
@@ -213,6 +214,7 @@ h2{
   overflow: hidden;
   max-width:100%;
   position: relative;
+  z-index: 0;
   
   h3 {
     max-width: 45%;
@@ -241,34 +243,35 @@ h2{
     position: absolute;
     top: 50%;
     right: 0px;
+    z-index: 1
   }
 }
 .carusel {
   position: relative;
   margin: auto;
-  width: 900px;
+  width: 840px;
   overflow: hidden;
   z-index: 0;
   
 
   }
 .pets-grid {
-  display:flex;
+  display: flex;
   position: relative;
   text-align: center;
   align-items: center;
-  transition: .2s;
+  transition: .3s;
   z-index: 0;
 }
 
 .pets-card {
-  width: 270px;
-  display:flex;
+  width: 250px;
+  display: flex;
   flex-shrink: 0;
   flex-direction: column;
   background-color: $background-about-help;
   margin: 0 15px;
-  // overflow: hidden;
+  overflow: hidden;
   align-items: center;
   z-index: 0;
   div{
@@ -316,17 +319,8 @@ h2{
 @media(max-width: $max-width-lg) {
   .pets {
     max-width: 100%;
-    // margin: 0 auto;
-
-    .left-button {
-      left: 12px;
-    }
-    .right-button {
-      right: -1px;
-    }
-
-    .carusel {
-      width: 540px;
+     .carusel {
+      width: 570px;
     }
 
     h3{
@@ -353,11 +347,11 @@ h2{
     }
 
     .left-button {
-      top: 90%;
+      top: 89%;
       left: 30%;
     }
     .right-button {
-      top: 90%;
+      top: 89%;
       right: 30%;
     }
 
@@ -378,7 +372,6 @@ h2{
     }
     .pets-button{
       margin: 20px auto;
-    
     }
   }
 }  
@@ -522,6 +515,5 @@ h2{
     .credit-card {
       margin: auto;
     } 
-        
   }  
 }  

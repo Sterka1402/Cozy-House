@@ -1,6 +1,7 @@
 import renderPets from '../modules/render-pets';
 
 function sortPetsByName(e, pets, petsContent)  {
+  if (!pets) return;
   if (!petsContent) return;
   if (e.target.options.selectedIndex == "1") {
     const sortPets = [...pets].sort(function(a,b) {
