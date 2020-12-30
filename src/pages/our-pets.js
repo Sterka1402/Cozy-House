@@ -5,8 +5,9 @@ import sortPetsByName from '../modules/sort-pets';
 window.addEventListener('load', () => {
   const petsContent = document.querySelector('.ourpets-content');
   const sortForm = document.querySelector('.petsForm');
-  if (!sortForm) return;
 
   renderPets(pets, petsContent);
-  sortForm.addEventListener('change', (e) => sortPetsByName(e, pets, petsContent));
+  if (sortForm) {
+    sortForm.addEventListener('change', (e) => sortPetsByName(e, pets, petsContent));
+  }
 });

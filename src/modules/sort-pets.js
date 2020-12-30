@@ -10,8 +10,7 @@ function sortPetsByName(e, pets, petsContent) {
       const bName = b.name;
       return aName >= bName ? 1 : -1;
     });
-  }
-  if (value === 'DESC') {
+  } else {
     sortPets.sort((a, b) => {
       const aName = a.name;
       const bName = b.name;
