@@ -1,24 +1,24 @@
 import renderPets from './render-pets';
 
 function sortPetsByName(e, pets, petsContent) {
-  if (!pets) return;
-  if (!petsContent) return;
-  if (e.target.options.selectedIndex === 1) {
-    const sortPets = [...pets].sort((a, b) => {
+  if (!pets || !petsContent) return;
+  const { value } = e.target;
+  const sortPets = [...pets];
+  if (value === 'ASC') {
+    sortPets.sort((a, b) => {
       const aName = a.name;
       const bName = b.name;
       return aName >= bName ? 1 : -1;
     });
-    renderPets(sortPets, petsContent);
   }
-  if (e.target.options.selectedIndex === 2) {
-    const sortPets = [...pets].sort((a, b) => {
+  if (value === 'DESC') {
+    sortPets.sort((a, b) => {
       const aName = a.name;
       const bName = b.name;
       return aName >= bName ? -1 : 1;
     });
-    renderPets(sortPets, petsContent);
   }
+  renderPets(sortPets, petsContent);
 }
 
 export default sortPetsByName;
