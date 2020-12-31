@@ -23,8 +23,23 @@
 .h3pets {
   max-width: 50%;
   text-align: center;
-  margin: 42px auto 42px auto;
+  margin: 42px auto;
 }
+
+form {
+  text-align: end;
+}
+
+option {
+  color: black;
+  padding-left: 1050px;
+  
+} 
+
+option:hover {
+  color: blue;
+}
+
 
 .ourpets-content {
   max-width: 100%;
@@ -76,7 +91,7 @@
   } 
 }
 
-@media(max-width: 1210px) {
+@media(max-width: $max-width-xl) {
   .backpets{
     padding-bottom: 70px;
   }
@@ -89,7 +104,7 @@
   }
 }
 
-@media(max-width: 900px) {
+@media(max-width: $max-width-lg) {
   .backpets{
     padding-bottom: 70px;
   }
@@ -104,9 +119,12 @@
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
   }
+  .ourpets-navigation button {
+    margin-right: 10px;
+  }
 }
 
-@media(max-width: 600px) {
+@media(max-width: $max-width-sm) {
   .backpets{
     padding-bottom: 42px;
   }

@@ -1,10 +1,12 @@
-const burger = document.querySelector('.burger');
-const navMenu = document.querySelector('nav');
+import activeLink from '../modules/active-link';
+import expandMenu from '../modules/expand-menu';
+import slider from '../modules/slider';
 
-function expandMenu () {
-  console.log(navMenu);
-  navMenu.classList.toggle('open');
-};
+window.addEventListener('load', () => {
+  const burger = document.querySelector('.burger');
+  const navMenu = document.querySelector('nav');
 
-burger.addEventListener('click', expandMenu);
-
+  slider();
+  activeLink();
+  burger.addEventListener('click', () => expandMenu(navMenu));
+});
