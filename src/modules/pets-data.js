@@ -1,6 +1,6 @@
 const pets = [
   {
-    id:1,
+    id: 1,
     name: 'Jenifer',
     age: '2 months',
     breed: 'Dog - Labrador',
@@ -8,7 +8,7 @@ const pets = [
     picture: 'pets-jennifer.png',
   },
   {
-    id:2,
+    id: 2,
     name: 'Sophia',
     age: '',
     breed: 'Dog - Shih tzu',
@@ -16,39 +16,39 @@ const pets = [
     picture: 'pets-sophia.png',
   },
   {
-    id:3,
-    name:'Woody',
+    id: 3,
+    name: 'Woody',
     age: '3,5 year',
     breed: 'Dog - Golden Retriever',
     description: 'Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.',
     picture: 'pets-woody.png',
   },
   {
-    id:4,
-    name:'Scarlett',
+    id: 4,
+    name: 'Scarlett',
     age: '',
     breed: 'Dog - Jack Russell Terrier',
     description: 'Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.',
     picture: 'pets-scarlett.png',
   },
   {
-    id:5,
+    id: 5,
     name: 'Katrine',
-    age:'' ,
+    age: '',
     breed: 'Cat - British Shorthair',
     description: 'Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.',
-    picture: 'pets-katrine.png'
+    picture: 'pets-katrine.png',
   },
   {
-    id:6,
+    id: 6,
     name: 'Timmy',
-    age:'',
+    age: '',
     breed: 'Cat - British Shorthair',
     description: 'Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.',
-    picture: 'pets-timmy.png'
+    picture: 'pets-timmy.png',
   },
   {
-    id:7,
+    id: 7,
     name: 'Freddie',
     age: '',
     breed: 'Cat - British Shorthair',
@@ -56,7 +56,7 @@ const pets = [
     picture: 'pets-freddie.png',
   },
   {
-    id:8,
+    id: 8,
     name: 'Charly',
     age: '3 years',
     breed: 'Dog - Jack Russell Terrier',
