@@ -4,7 +4,9 @@ const renderPets = (pets, container) => {
   pets.forEach((pet) => {
     const petCard = document.createElement('div');
     petCard.innerHTML = `
+      <div>  
       <img src='./img/${pet.picture}'>
+      </div>
       <h4>${pet.name}</h4>
       `;
     const btn = document.createElement('button');

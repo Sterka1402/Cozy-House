@@ -32,12 +32,6 @@ form {
 
 option {
   color: black;
-  padding-left: 1050px;
-  
-} 
-
-option:hover {
-  color: blue;
 }
 
 
@@ -48,6 +42,7 @@ option:hover {
   margin: 0 auto;
   
   .ourpets-card {
+    width: 250px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -55,6 +50,14 @@ option:hover {
     justify-content:center;
     background-color: $background-about-help;
     margin: 15px;
+    div{
+      width: 100%;
+      max-width: 100%;
+      img{
+        display: block;
+        width:100%;
+      }
+    }
            
     h4{
       font-weight: normal;
