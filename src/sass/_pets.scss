@@ -34,49 +34,11 @@ option {
   color: black;
 }
 
-
 .ourpets-content {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto;
-  
-  .ourpets-card {
-    width: 250px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    background-color: $background-about-help;
-    margin: 15px;
-    div{
-      width: 100%;
-      max-width: 100%;
-      img{
-        display: block;
-        width:100%;
-      }
-    }
-           
-    h4{
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 130%;
-      color: $color-about-h;
-      letter-spacing: 0.06em;
-      margin: 30px auto;
-    }
-  }
-}
-
-.ourpets-buttons {
-  min-width: 200px;
-  max-width: 200px;
-  border: 2px solid $background-buttons;
-  border-radius: $border-radius;
-  padding: 15px 0;
-  margin: 30px 0;
 }
 
 .ourpets-navigation {
@@ -100,10 +62,13 @@ option {
   }
   
   .ourpets-content {
-    max-height: 1000px;
+    max-height: 950px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
+    .ourpets-card {
+      overflow: visible;
+    } 
   }
 }
 
@@ -116,7 +81,7 @@ option {
   } 
 
   .ourpets-content {
-    max-height: 1465px;
+    max-height: 1435px;
     max-width: 628px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;

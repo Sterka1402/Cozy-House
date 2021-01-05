@@ -13,6 +13,7 @@ const renderPets = (pets, container) => {
     btn.innerHTML = 'Learn more';
     btn.className = 'ourpets-buttons hover';
     petCard.append(btn);
+    // petCard.classList.add('pets-card');
     petCard.classList.add('ourpets-card');
     container.append(petCard);
   });
