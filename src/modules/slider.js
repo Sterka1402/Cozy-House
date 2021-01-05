@@ -1,5 +1,4 @@
 function slider(pets) {
-  
   const nextButton = document.querySelector('.right-button');
   const prevButton = document.querySelector('.left-button');
   if (!document.querySelector('.ourpets-card')) return;
@@ -14,8 +13,7 @@ function slider(pets) {
     visibleListWidth = visibleList.clientWidth;
     step = Math.max(step, -(width * pets.length) + visibleListWidth);
     visibleList.style.left = `${step}px`;
-
-  })
+  });
   function moveButtonNext() {
     step -= width * count;
     step = Math.max(step, -(width * pets.length) + visibleListWidth);

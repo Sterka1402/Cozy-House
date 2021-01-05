@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
   const navMenu = document.querySelector('nav');
   const petsShelter = document.querySelector('.pets-grid');
 
- 
   activeLink();
   renderPets(pets, petsShelter);
   slider(pets);
