@@ -1,5 +1,5 @@
 import pets from '../modules/pets-data';
-import renderPets from '../modules/render-pets';
+import renderPets from '../modules/render-pets-byclasses';
 import sortPetsByName from '../modules/sort-pets';
 
 window.addEventListener('load', () => {

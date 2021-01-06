@@ -65,13 +65,13 @@ header {
 
   .open {
     display: flex;
-      .burger{
+      .burger {
         position: absolute;
         right: 10%;
         transform: rotate(90deg) !important;
         align-items: flex-end;
       }
-     .nav-menu  {
+     .nav-menu {
         justify-content: center;
         position: absolute;
         top: 122px;

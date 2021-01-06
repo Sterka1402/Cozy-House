@@ -16,6 +16,7 @@
   }
 }
 .backpets{
+  position: relative;
   background-color: $background-pets-donation;
   overflow: hidden;
   padding-bottom: 100px;
@@ -34,10 +35,43 @@ option {
   color: black;
 }
 
+.modal-content {
+  display: block;
+  width: 1000px;
+  margin: 50px auto;
+  position: absolute;
+  background-color: $background-about-help;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+  z-index: 10;
+  
+  .close-modal {
+    float: right;
+    border:2px solid $background-buttons;
+    border-radius: 100px;
+  }
+
+  div img{
+    width: 100%;
+  }
+
+  // img {
+  //   max-width: 100%;
+  // }
+  .modal-text {
+    margin: 50px;
+    width:500px;
+  }
+}
+
 .ourpets-content {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 250px 250px 250px 250px;
+  row-gap: 30px;
+  column-gap: 30px;
   margin: 0 auto;
 }
 
@@ -63,7 +97,7 @@ option {
   
   .ourpets-content {
     max-height: 950px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 250px 250px 250px;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
     .ourpets-card {
@@ -83,7 +117,7 @@ option {
   .ourpets-content {
     max-height: 1435px;
     max-width: 628px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 250px 250px;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
   }
@@ -100,7 +134,7 @@ option {
   .ourpets-content {
     max-height: 1385px;
     max-width: 290px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px;
     overflow: hidden;
   }
 }
