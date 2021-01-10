@@ -29,10 +29,10 @@ class PetsCard {
   }
   modalWindow() {
     const petModalWindow = document.querySelector('.modal-content');
-    const closebtn = document.createElement('button');
-    closebtn.innerHTML = 'X';
-    closebtn.className = 'close-modal';
-    petModalWindow.append(closebtn);
+    // const closebtn = document.createElement('button');
+    // closebtn.innerHTML = 'X';
+    // closebtn.className = 'close-modal';
+    // petModalWindow.append(closebtn);
     
     // petModalWindow.style.display = 'block';
     petModalWindow.innerHTML = `
@@ -46,7 +46,11 @@ class PetsCard {
         <p>${this.description}</p>
       </div>
     `;
-    closebtn.addEventListener('click', this.render);
+    const closeIcon = document.createElement('button');
+    closeIcon.innerHTML = 'X';
+    closeIcon.className = 'icon-close';
+    petModalWindow.append(closeIcon);
+    closeIcon.addEventListener('click', this.render);
   }
 };
 

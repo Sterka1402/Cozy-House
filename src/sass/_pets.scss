@@ -16,11 +16,15 @@
   }
 }
 .backpets{
-  position: relative;
+  
   background-color: $background-pets-donation;
   overflow: hidden;
   padding-bottom: 100px;
+  .container{
+    position: relative;
+  }
 }
+
 .h3pets {
   max-width: 50%;
   text-align: center;
@@ -36,33 +40,48 @@ option {
 }
 
 .modal-content {
+  left: 5%;
   display: block;
   width: 1000px;
-  margin: 50px auto;
   position: absolute;
   background-color: $background-about-help;
   display: flex;
   text-align: center;
   justify-content: center;
-  max-width: 100%;
+  // max-width: 100%;
   z-index: 10;
-  
-  .close-modal {
-    float: right;
-    border:2px solid $background-buttons;
-    border-radius: 100px;
+  button {
+    justify-content: right;
+  }
+  .icon-close {
+    width: 50px;
+    //  width: 100%;
+	  height: 50px;
+    border:3px solid $background-buttons;
+    border-radius: $border-radius;
+    // padding: 10px;
+    margin: 15px;
+    cursor: pointer;
   }
 
-  div img{
-    width: 100%;
+  div {
+    max-width: 100%;
+    img{
+      margin: 20px auto;
+      margin-bottom: 400px;
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
-  // img {
-  //   max-width: 100%;
-  // }
+
   .modal-text {
-    margin: 50px;
-    width:500px;
+    font-size: 20px;
+    margin: 100px;
+    width:40%;
+    p {
+      padding: 10px 0;
+    }
   }
 }
 
@@ -94,7 +113,10 @@ option {
   .backpets{
     padding-bottom: 70px;
   }
-  
+  .modal-content {
+    width: 700px;
+
+  } 
   .ourpets-content {
     max-height: 950px;
     grid-template-columns: 250px 250px 250px;
@@ -113,7 +135,29 @@ option {
   .h3pets {
     max-width: 70%;
   } 
+  .modal-content {
+    left: 15%;
+    width: 500px;
+    flex-direction: column-reverse;
+    .modal-text {
+      margin: 10px auto;
+      width:80%; 
+    }   
 
+    div {
+      max-width: 100%;
+      img{
+        margin: 10px auto;
+        margin-bottom: 100px;
+        
+      }
+    } 
+    
+    button {
+      align-self: flex-end;
+      
+    } 
+  } 
   .ourpets-content {
     max-height: 1435px;
     max-width: 628px;
@@ -130,7 +174,10 @@ option {
   .backpets{
     padding-bottom: 42px;
   }
-
+  .modal-content {
+    left: 5%;
+    width: 400px;
+  } 
   .ourpets-content {
     max-height: 1385px;
     max-width: 290px;

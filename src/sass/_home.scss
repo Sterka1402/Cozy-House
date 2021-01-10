@@ -263,6 +263,9 @@ h2{
   align-items: center;
   transition: .3s;
   z-index: 0;
+  .ourpets-card {
+    margin: 15px;
+  }
 }
 
 .ourpets-card {
@@ -275,7 +278,7 @@ h2{
   justify-content:center;
   overflow: hidden;
   background-color: $background-about-help;
-  // margin: 15px;
+  // 
   z-index: 0;
   div{
     width: 100%;
