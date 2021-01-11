@@ -48,18 +48,16 @@ option {
   display: flex;
   text-align: center;
   justify-content: center;
-  // max-width: 100%;
   z-index: 10;
   button {
     justify-content: right;
   }
   .icon-close {
     width: 50px;
-    //  width: 100%;
-	  height: 50px;
+    height: 50px;
     border:3px solid $background-buttons;
     border-radius: $border-radius;
-    // padding: 10px;
+   
     margin: 15px;
     cursor: pointer;
   }

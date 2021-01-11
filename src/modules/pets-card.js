@@ -23,18 +23,12 @@ class PetsCard {
     petCard.append(btn);
   
     btn.addEventListener('click', this.modalWindow);
-    //  console.log({this:name})  this.modalWindow(this)
+   
     petCard.classList.add('ourpets-card');
     container.append(petCard);
   }
   modalWindow() {
     const petModalWindow = document.querySelector('.modal-content');
-    // const closebtn = document.createElement('button');
-    // closebtn.innerHTML = 'X';
-    // closebtn.className = 'close-modal';
-    // petModalWindow.append(closebtn);
-    
-    // petModalWindow.style.display = 'block';
     petModalWindow.innerHTML = `
       <div>
         <img src='../img/${this.picture}'>
@@ -50,7 +44,8 @@ class PetsCard {
     closeIcon.innerHTML = 'X';
     closeIcon.className = 'icon-close';
     petModalWindow.append(closeIcon);
-    closeIcon.addEventListener('click', this.render);
+    console.log(closeIcon);
+    closeIcon.addEventListener('click',console.log('hello'));
   }
 };
 
