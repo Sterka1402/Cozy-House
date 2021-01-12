@@ -5,7 +5,8 @@ const renderPets = (pets, container) => {
   if (!container) return;
   container.innerHTML = '';
   pets.forEach((pet) => {
-    const petsCard = new PetsCard(pet.picture, pet.name, pet.breed, pet.age, pet.description);
+    const { picture, name, breed, age, description } = pet;
+    const petsCard = new PetsCard(picture, name, breed, age, description);
     petsCard.init(container);
 
   });

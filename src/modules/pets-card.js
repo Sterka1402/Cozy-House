@@ -13,7 +13,7 @@ class PetsCard {
     const petCard = document.createElement('div');
     petCard.innerHTML = `
       <div>  
-      <img src='../img/${this.picture}'>
+      <img src='./img/${this.picture}'>
       </div>
       <h4>${this.name}</h4>
       `;
@@ -31,7 +31,7 @@ class PetsCard {
     const petModalWindow = document.querySelector('.modal-content');
     petModalWindow.innerHTML = `
       <div>
-        <img src='../img/${this.picture}'>
+        <img src='./img/${this.picture}'>
       </div>
       <div class = "modal-text">
         <h4>${this.name}</h4>
