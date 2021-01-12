@@ -1,3 +1,5 @@
+// import { container } from 'webpack';
+
 class PetsCard {
   constructor(picture, name, breed, age, description) {
     this.picture = picture;
@@ -5,11 +7,11 @@ class PetsCard {
     this.breed = breed;
     this.age = age;
     this.description = description;
-    
+
     this.modalWindow = this.modalWindow.bind(this);
   }
 
-  init (container) {
+  init(container) {
     const petCard = document.createElement('div');
     petCard.innerHTML = `
       <div>  
@@ -21,12 +23,13 @@ class PetsCard {
     btn.innerHTML = 'Learn more';
     btn.className = 'ourpets-buttons hover';
     petCard.append(btn);
-  
+
     btn.addEventListener('click', this.modalWindow);
-   
+
     petCard.classList.add('ourpets-card');
     container.append(petCard);
   }
+
   modalWindow() {
     const petModalWindow = document.querySelector('.modal-content');
     petModalWindow.innerHTML = `
@@ -44,9 +47,14 @@ class PetsCard {
     closeIcon.innerHTML = 'X';
     closeIcon.className = 'icon-close';
     petModalWindow.append(closeIcon);
-    console.log(closeIcon);
-    closeIcon.addEventListener('click',console.log('hello'));
+    console.log(document.querySelector('.icon-close'));
+    closeIcon.addEventListener('click', this.closeModalWindow.bind(this));
   }
-};
+  closeModalWindow() {
+    console.log(this);
+    this.style.display = "none";
+
+  }
+}
 
 export default PetsCard;
