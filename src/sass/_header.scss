@@ -3,7 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 40px;
+  margin: 30px 0;
    
     a {
       font-size: 32px;
@@ -16,7 +16,6 @@ header {
       color: $color-header-footer-h;
     }
     nav{
-      position: relative;
       .burger{
         display: none;
       }
@@ -55,8 +54,9 @@ header {
   header nav{
     .burger{
       display: block;
-      margin-right: 0;
+      margin-right: 30px;
       cursor: pointer;
+      
     }
     .nav-menu{
       display: none;
@@ -74,14 +74,15 @@ header {
      .nav-menu  {
         justify-content: center;
         position: absolute;
-        top: 42px;
-        right: -50px;
+        top: 122px;
+        right: 0px;
         max-width: 320px;
         background-color: $color-buttons !important;
         display: block !important;
+        z-index: 10;
       li{
         text-align: center !important;
-        margin: 80px auto !important;
+        margin: 60px auto !important;
         font-family: Arial;
         font-size: 32px;
         line-height: 160%;
