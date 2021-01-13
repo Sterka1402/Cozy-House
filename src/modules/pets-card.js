@@ -9,6 +9,8 @@ class PetsCard {
     this.description = description;
 
     this.modalWindow = this.modalWindow.bind(this);
+    this.showModalWindow = this.showModalWindow.bind(this);
+    this.closeModalWindow = this.closeModalWindow.bind(this);
   }
 
   init(container) {
@@ -25,35 +27,38 @@ class PetsCard {
     petCard.append(btn);
 
     btn.addEventListener('click', this.modalWindow);
+    btn.addEventListener('click', this.showModalWindow);
 
     petCard.classList.add('ourpets-card');
     container.append(petCard);
   }
 
   modalWindow() {
-    const petModalWindow = document.querySelector('.modal-content');
+    const petModalWindow = document.querySelector('.modal-box');
     petModalWindow.innerHTML = `
       <div>
-        <img src='./img/${this.picture}'>
-      </div>
-      <div class = "modal-text">
-        <h4>${this.name}</h4>
-        <p>${this.age}</p>
-        <p>${this.breed}</p>
-        <p>${this.description}</p>
-      </div>
+          <img src='./img/${this.picture}'>
+        </div>
+        <div class = "modal-text">
+          <h4>${this.name}</h4>
+          <p>${this.age}</p>
+          <p>${this.breed}</p>
+          <p>${this.description}</p>
+      </div>      
     `;
-    const closeIcon = document.createElement('button');
-    closeIcon.innerHTML = 'X';
-    closeIcon.className = 'icon-close';
-    petModalWindow.append(closeIcon);
-    console.log(document.querySelector('.icon-close'));
-    closeIcon.addEventListener('click', this.closeModalWindow.bind(this));
+    const closeIcon = document.querySelector('.icon-close');
+    closeIcon.addEventListener('click', this.closeModalWindow);
+
+  }
+  showModalWindow(){
+    const showModalWindow = document.querySelector('.modal-content');
+    showModalWindow.classList.add('show');
+    
   }
   closeModalWindow() {
-    console.log(this);
-    this.style.display = "none";
-
+    const showModalWindow = document.querySelector('.modal-content');
+    showModalWindow.classList.remove('show');
+    
   }
 }
 

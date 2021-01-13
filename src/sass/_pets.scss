@@ -16,11 +16,11 @@
   }
 }
 .backpets{
-  
+  position: relative;
   background-color: $background-pets-donation;
   overflow: hidden;
   padding-bottom: 100px;
-  .container{
+  .container {
     position: relative;
   }
 }
@@ -40,49 +40,68 @@ option {
   color: black;
 }
 
-.modal-content {
-  left: 5%;
-  display: block;
-  width: 1000px;
-  position: absolute;
-  background-color: $background-about-help;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  z-index: 10;
-  button {
-    justify-content: right;
-  }
-  .icon-close {
-    width: 50px;
-    height: 50px;
-    border:3px solid $background-buttons;
-    border-radius: $border-radius;
-   
-    margin: 15px;
-    cursor: pointer;
-  }
 
-  div {
-    max-width: 100%;
-    img{
-      margin: 20px auto;
-      margin-bottom: 400px;
-      width: 100%;
-      max-width: 100%;
+  .show {
+    display: flex !important;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
+  .modal-content {
+    display: none;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba($color: #292929, $alpha: 0.6);
+    z-index: 10;
+    
+    
+
+    button {
+      justify-content: right;
+    }
+    .icon-close {
+      position:absolute;
+      right: -10px;
+      top: -10px;
+      width: 50px;
+      height: 50px;
+      border:3px solid $background-buttons;
+      border-radius: $border-radius;
+      position: absolute;
+      margin: 15px;
+      cursor: pointer;
+    }
+    
+    .modal-box{
+      max-width: 900px;
+      background-color: $background-about-help;
+      display: flex;
+      z-index: 10;
+      position: relative;
+      
+      div {
+        max-width: 100%;
+        img{
+          margin: 20px auto;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+
+      .modal-text {
+        font-size: 20px;
+        width:40%;
+        p {
+          padding: 10px 0;
+        }
+      }
     }
   }
-
-
-  .modal-text {
-    font-size: 20px;
-    margin: 100px;
-    width:40%;
-    p {
-      padding: 10px 0;
-    }
-  }
-}
 
 .ourpets-content {
   max-width: 100%;

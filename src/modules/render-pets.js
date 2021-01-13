@@ -1,21 +1,15 @@
+import PetsCard from './pets-card';
+
 const renderPets = (pets, container) => {
   if (!container) return;
   container.innerHTML = '';
   pets.forEach((pet) => {
-    const petCard = document.createElement('div');
-    petCard.innerHTML = `
-      <div>  
-      <img src='./img/${pet.picture}'>
-      </div>
-      <h4>${pet.name}</h4>
-      `;
-    const btn = document.createElement('button');
-    btn.innerHTML = 'Learn more';
-    btn.className = 'ourpets-buttons hover';
-    petCard.append(btn);
-    // petCard.classList.add('pets-card');
-    petCard.classList.add('ourpets-card');
-    container.append(petCard);
+    const {
+      picture, name, breed, age, description,
+    } = pet;
+    const petsCard = new PetsCard(picture, name, breed, age, description);
+    petsCard.init(container);
   });
 };
+
 export default renderPets;
