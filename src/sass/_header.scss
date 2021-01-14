@@ -66,8 +66,6 @@ header {
   .open {
     display: flex;
       .burger {
-        position: absolute;
-        right: 5%;
         transform: rotate(90deg) !important;
         align-items: flex-end;
       }

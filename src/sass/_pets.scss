@@ -43,8 +43,7 @@ option {
 
   .show {
     display: flex !important;
-    text-align: center;
-    justify-content: center;
+    
   }
   
 
@@ -57,25 +56,28 @@ option {
     right: 0;
     background-color:rgba($color: #292929, $alpha: 0.6);
     z-index: 10;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .class-position{
+      position: relative;
     
-    
-
-    button {
-      justify-content: right;
+      button {
+        justify-content: right;
+      }
+      .icon-close {
+        position:absolute;
+        right: -9%;
+        top: -13%;
+        width: 50px;
+        height: 50px;
+        border:3px solid $background-buttons;
+        border-radius: $border-radius;
+        position: absolute;
+        margin: 15px;
+        cursor: pointer;
+      }
     }
-    .icon-close {
-      position:absolute;
-      right: -10px;
-      top: -10px;
-      width: 50px;
-      height: 50px;
-      border:3px solid $background-buttons;
-      border-radius: $border-radius;
-      position: absolute;
-      margin: 15px;
-      cursor: pointer;
-    }
-    
     .modal-box{
       max-width: 900px;
       background-color: $background-about-help;
