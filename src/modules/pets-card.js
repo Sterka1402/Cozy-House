@@ -1,4 +1,3 @@
-
 class PetsCard {
   constructor(picture, name, breed, age, description) {
     this.picture = picture;
@@ -60,7 +59,6 @@ class PetsCard {
   }
 
   closeModalWindowByEscape(e) {
-    console.log(e.keyCode);
     if (e.keyCode === 27) {
       this.closeModalWindow();
 

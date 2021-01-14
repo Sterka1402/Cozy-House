@@ -40,70 +40,67 @@ option {
   color: black;
 }
 
+.show {
+  display: flex !important;
+}
 
-  .show {
-    display: flex !important;
-    
-  }
+.modal-content {
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba($color: #292929, $alpha: 0.6);
+  z-index: 10;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  .class-position{
+    position: relative;
   
-
-  .modal-content {
-    display: none;
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:rgba($color: #292929, $alpha: 0.6);
+    button {
+      justify-content: right;
+    }
+    .icon-close {
+      position:absolute;
+      right: -9%;
+      top: -13%;
+      width: 50px;
+      height: 50px;
+      border:3px solid $background-buttons;
+      border-radius: $border-radius;
+      position: absolute;
+      margin: 15px;
+      cursor: pointer;
+    }
+  }
+  .modal-box{
+    max-width: 900px;
+    background-color: $background-about-help;
+    display: flex;
     z-index: 10;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    .class-position{
-      position: relative;
+    position: relative;
+    margin: 10px;
     
-      button {
-        justify-content: right;
-      }
-      .icon-close {
-        position:absolute;
-        right: -9%;
-        top: -13%;
-        width: 50px;
-        height: 50px;
-        border:3px solid $background-buttons;
-        border-radius: $border-radius;
-        position: absolute;
-        margin: 15px;
-        cursor: pointer;
+    div {
+      margin: 30px;
+      max-width: 100%;
+      img{
+        width: 100%;
+        max-width: 100%;
       }
     }
-    .modal-box{
-      max-width: 900px;
-      background-color: $background-about-help;
-      display: flex;
-      z-index: 10;
-      position: relative;
-      margin: 10px;
-      
-      div {
-        margin: 30px;
-        max-width: 100%;
-        img{
-          width: 100%;
-          max-width: 100%;
-        }
-      }
 
-      .modal-text {
-        font-size: 20px;
-        width:40%;
-        p {
-          padding: 10px 0;
-        }
+    .modal-text {
+      font-size: 20px;
+      width:40%;
+      p {
+        padding: 10px 0;
       }
     }
   }
+}
 
 .ourpets-content {
   max-width: 100%;
@@ -179,13 +176,11 @@ option {
 
       img{
         margin: 10px auto;
-                
       }
     } 
     
     button {
       align-self: flex-end;
-      
     } 
   } 
   .ourpets-content {
