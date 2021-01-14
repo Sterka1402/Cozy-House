@@ -30,7 +30,7 @@ class PetsCard {
     petCard.append(btn);
 
     btn.addEventListener('click', this.showModalWindow);
-   
+
     petCard.classList.add('ourpets-card');
     container.append(petCard);
   }
@@ -48,7 +48,7 @@ class PetsCard {
       </div>      
     `;
     this.modalWindowContent.classList.add('show');
-    
+
     this.closeIcon.addEventListener('click', this.closeModalWindow);
     document.addEventListener('keydown', this.closeModalWindowByEscape);
     this.modalWindowContent.addEventListener('click', this.closeModalWindowByClick);
@@ -61,13 +61,13 @@ class PetsCard {
   closeModalWindowByEscape(e) {
     if (e.keyCode === 27) {
       this.closeModalWindow();
-
     }
   }
+
   closeModalWindowByClick(e) {
     if (e.target === this.modalWindowContent) {
       this.closeModalWindow();
-    } 
+    }
   }
 }
 
