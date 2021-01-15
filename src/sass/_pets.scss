@@ -64,7 +64,7 @@ option {
     }
     .icon-close {
       position:absolute;
-      right: -9%;
+      right: -5%;
       top: -13%;
       width: 50px;
       height: 50px;
@@ -77,6 +77,7 @@ option {
   }
   .modal-box{
     max-width: 900px;
+    border-radius: 20px;
     background-color: $background-about-help;
     display: flex;
     z-index: 10;
@@ -130,6 +131,10 @@ option {
   .backpets{
     padding-bottom: 70px;
   }
+  .modal-content  .class-position .icon-close {
+    right: -8%;
+  }
+
   .modal-content .modal-box {
     width: 600px;
     div {
@@ -161,6 +166,10 @@ option {
   .h3pets {
     max-width: 70%;
   } 
+  .modal-content  .class-position .icon-close {
+    top: -9%;
+    right: -11%;
+  }
   .modal-content .modal-box {
     max-width: 500px;
     flex-direction: column-reverse;
@@ -203,6 +212,10 @@ option {
 @media(max-width: $max-width-sm) {
   .backpets{
     padding-bottom: 42px;
+  }
+  .modal-content  .class-position .icon-close {
+    top: -11%;
+    right: -3%;
   }
   .modal-content .modal-box{
     width: 300px;
