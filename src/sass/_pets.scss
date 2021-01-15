@@ -16,10 +16,15 @@
   }
 }
 .backpets{
+  position: relative;
   background-color: $background-pets-donation;
   overflow: hidden;
   padding-bottom: 100px;
+  .container {
+    position: relative;
+  }
 }
+
 .h3pets {
   max-width: 50%;
   text-align: center;
@@ -28,24 +33,90 @@
 
 form {
   text-align: end;
+  margin-bottom: 20px;
 }
 
 option {
   color: black;
 }
 
+.show {
+  display: flex !important;
+}
+
+.modal-content {
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba($color: #292929, $alpha: 0.6);
+  z-index: 10;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  .class-position{
+    position: relative;
+  
+    button {
+      justify-content: right;
+    }
+    .icon-close {
+      position:absolute;
+      right: -5%;
+      top: -13%;
+      width: 50px;
+      height: 50px;
+      border:3px solid $background-buttons;
+      border-radius: $border-radius;
+      position: absolute;
+      margin: 15px;
+      cursor: pointer;
+    }
+  }
+  .modal-box{
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: $background-about-help;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    margin: 10px;
+    
+    div {
+      margin: 30px;
+      max-width: 100%;
+      img{
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .modal-text {
+      font-size: 20px;
+      width:40%;
+      p {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
 .ourpets-content {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 250px 250px 250px 250px;
+  row-gap: 30px;
+  column-gap: 30px;
   margin: 0 auto;
 }
 
 .ourpets-navigation {
+  margin-top: 20px;
   display: flex;
   justify-content:center;
-  margin-top: 60px;
-  
+    
   button {
     border: 2px solid $background-buttons;
     border-radius: 100px;
@@ -60,12 +131,28 @@ option {
   .backpets{
     padding-bottom: 70px;
   }
-  
+  .modal-content  .class-position .icon-close {
+    right: -8%;
+  }
+
+  .modal-content .modal-box {
+    width: 600px;
+    div {
+      margin: 20px;
+    }
+    .modal-text {
+      font-size: 16px;
+      width:40%;
+    }
+  } 
   .ourpets-content {
     max-height: 950px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 250px 250px 250px;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
+    justify-content: center;
+    margin-top: 20px;
+
     .ourpets-card {
       overflow: visible;
     } 
@@ -79,11 +166,36 @@ option {
   .h3pets {
     max-width: 70%;
   } 
+  .modal-content  .class-position .icon-close {
+    top: -9%;
+    right: -11%;
+  }
+  .modal-content .modal-box {
+    max-width: 500px;
+    flex-direction: column-reverse;
+    .modal-text {
+      margin: 10px auto;
+      width:80%; 
+    }   
 
+    div {
+      max-width: 100%;
+      width:70%;
+      margin:0 auto;
+
+      img{
+        margin: 10px auto;
+      }
+    } 
+    
+    button {
+      align-self: flex-end;
+    } 
+  } 
   .ourpets-content {
     max-height: 1435px;
     max-width: 628px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 250px 250px;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
   }
@@ -91,16 +203,27 @@ option {
     margin-right: 10px;
   }
 }
+@media(max-width: $max-width-md) {
+  .modal-content .modal-box{
+    width: 400px;
+  } 
+}
 
 @media(max-width: $max-width-sm) {
   .backpets{
     padding-bottom: 42px;
   }
-
+  .modal-content  .class-position .icon-close {
+    top: -11%;
+    right: -3%;
+  }
+  .modal-content .modal-box{
+    width: 300px;
+  } 
   .ourpets-content {
     max-height: 1385px;
     max-width: 290px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px;
     overflow: hidden;
   }
 }
