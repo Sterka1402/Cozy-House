@@ -1,19 +1,15 @@
 class PetsCard {
-  constructor(picture, name, breed, age, description) {
+  constructor({
+    picture, name, breed, age, description,
+  }, modal) {
     this.picture = picture;
     this.name = name;
     this.breed = breed;
     this.age = age;
     this.description = description;
+    this.modal = modal;
 
     this.showModalWindow = this.showModalWindow.bind(this);
-    this.closeModalWindow = this.closeModalWindow.bind(this);
-    this.closeModalWindowByEscape = this.closeModalWindowByEscape.bind(this);
-    this.closeModalWindowByClick = this.closeModalWindowByClick.bind(this);
-
-    this.modalWindowContent = document.querySelector('.modal-content');
-    this.textModalWindow = document.querySelector('.modal-box');
-    this.closeIcon = document.querySelector('.icon-close');
   }
 
   init(container) {
@@ -36,7 +32,7 @@ class PetsCard {
   }
 
   showModalWindow() {
-    this.textModalWindow.innerHTML = `
+    const modalCard = `
       <div>
           <img src='./img/${this.picture}'>
         </div>
@@ -47,27 +43,7 @@ class PetsCard {
           <p>${this.description}</p>
       </div>      
     `;
-    this.modalWindowContent.classList.add('show');
-
-    this.closeIcon.addEventListener('click', this.closeModalWindow);
-    document.addEventListener('keydown', this.closeModalWindowByEscape);
-    this.modalWindowContent.addEventListener('click', this.closeModalWindowByClick);
-  }
-
-  closeModalWindow() {
-    this.modalWindowContent.classList.remove('show');
-  }
-
-  closeModalWindowByEscape(e) {
-    if (e.keyCode === 27) {
-      this.closeModalWindow();
-    }
-  }
-
-  closeModalWindowByClick(e) {
-    if (e.target === this.modalWindowContent) {
-      this.closeModalWindow();
-    }
+    this.modal.showModalWindow(modalCard);
   }
 }
 
